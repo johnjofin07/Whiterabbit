@@ -13,6 +13,16 @@
 
     <script src="//unpkg.com/alpinejs" defer></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <style>
+        @font-face {
+            font-family: "HKGrotesk";
+            src: url(HKGrotesk-Regular.otf);
+        }
+
+        body {
+            font-family: "HKGrotesk";
+        }
+    </style>
 </head>
 
 <body>
@@ -105,7 +115,7 @@
                     height: 78px;
                     display: flex;
                     align-items: center;
-                    justify-content: space-around;
+                    justify-content: space-evenly;
                 }
 
                 #banner .banner__content {
@@ -178,175 +188,173 @@
         <section id="product">
             <div class="product__wrap row">
                 <div class="product__image col-md-6">
-
-                    <div class="carousel carousel-main" data-flickity='{ "fade": true, "imagesLoaded": true,"pageDots": false }'>
-                        <img class="carousel-cell" src="sofa1.png" alt="">
-                        <img class="carousel-cell" src="sofa2.png" alt="">
-                        <img class="carousel-cell" src="sofa3.png" alt="">
-                        <img class="carousel-cell" src="sofa4.png" alt="">
-                        <img class="carousel-cell" src="sofa5.png" alt="">
-                        <img class="carousel-cell" src="sofa6.png" alt="">
-                        <img class="carousel-cell" src="sofa7.png" alt="">
-                        <img class="carousel-cell" src="sofa8.png" alt="">
-
+                    <div class="carousel carousel-main"
+                        data-flickity='{ "fade": true, "imagesLoaded": true,"pageDots": false }'>
+                        <img class="carousel-cell" src="sofa1.png" alt="" />
+                        <img class="carousel-cell" src="sofa2.png" alt="" />
+                        <img class="carousel-cell" src="sofa3.png" alt="" />
+                        <img class="carousel-cell" src="sofa4.png" alt="" />
+                        <img class="carousel-cell" src="sofa5.png" alt="" />
+                        <img class="carousel-cell" src="sofa6.png" alt="" />
+                        <img class="carousel-cell" src="sofa7.png" alt="" />
+                        <img class="carousel-cell" src="sofa8.png" alt="" />
                     </div>
 
                     <div class="carousel carousel-nav" data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false,"prevNextButtons": false
                     }'>
-                        <img class="carousel-cell" src="sofa1.png" alt="">
-                        <img class="carousel-cell" src="sofa2.png" alt="">
-                        <img class="carousel-cell" src="sofa3.png" alt="">
-                        <img class="carousel-cell" src="sofa4.png" alt="">
-                        <img class="carousel-cell" src="sofa5.png" alt="">
-                        <img class="carousel-cell" src="sofa6.png" alt="">
-                        <img class="carousel-cell" src="sofa7.png" alt="">
-                        <img class="carousel-cell" src="sofa8.png" alt="">
+                        <img class="carousel-cell" src="sofa1.png" alt="" />
+                        <img class="carousel-cell" src="sofa2.png" alt="" />
+                        <img class="carousel-cell" src="sofa3.png" alt="" />
+                        <img class="carousel-cell" src="sofa4.png" alt="" />
+                        <img class="carousel-cell" src="sofa5.png" alt="" />
+                        <img class="carousel-cell" src="sofa6.png" alt="" />
+                        <img class="carousel-cell" src="sofa7.png" alt="" />
+                        <img class="carousel-cell" src="sofa8.png" alt="" />
                     </div>
-
-
-
-
                 </div>
 
-                <div class="product__discriptoion container col-md-6">
-                    <h3>Pharetra Convallis</h3>
-                    <p>
-                        Euismod in pellentesque massa placerat duis ultricies lacus sed.
-                        Sit amet consectetur adipiscing elit pellentesque habitant morbi.
-                        Commodo nulla facilisi nullam vehicula!
-                    </p>
+                <div class="product__discriptoion col-md-6">
+                    <div class="container">
+                        <h2>Pharetra Convallis</h2>
+                        <p>
+                            Euismod in pellentesque massa placerat duis ultricies lacus sed.
+                            Sit amet consectetur adipiscing elit pellentesque habitant
+                            morbi. Commodo nulla facilisi nullam vehicula!
+                        </p>
 
-                    <small>COLOR</small>
-                    <div class="color__selection row">
-                        <div class="col-md-3">
-                            <div class="color __1">
-                                <div class="top__color">
-                                    <p>NEW COLOR!</p>
+                        <small>COLOR</small>
+                        <div class="color__selection row">
+                            <div class="col-md-3">
+                                <div class="color __1">
+                                    <div class="top__color">
+                                        <p>NEW COLOR!</p>
+                                    </div>
+                                    <div class="color__name">
+                                        <p>Nordvalla dark grey</p>
+                                    </div>
                                 </div>
-                                <div class="color__name">
-                                    <p>Nordvalla dark grey</p>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="color __2">
+                                    <div class="top__color">
+                                        <p>LIMITED RELEASE</p>
+                                    </div>
+                                    <div class="color__name">
+                                        <p>Beige</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="color __3">
+                                    <div class="color__name center">
+                                        <p>Grey</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="color __4">
+                                    <div class="color__name center">
+                                        <p>Skiftebo yellow</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="color __5">
+                                    <div class="color__name center">
+                                        <p>Kelinge beige</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="color __6">
+                                    <div class="color__name center">
+                                        <p>Vibberbo black/beige</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-3">
-                            <div class="color __2">
-                                <div class="top__color">
-                                    <p>LIMITED RELEASE</p>
-                                </div>
-                                <div class="color__name">
-                                    <p>Beige</p>
-                                </div>
+                        <p class="qty small__txt">QUANTITY</p>
+                        <div class="qty__selection" x-data="{ count: 1 }">
+                            <div class="qty__amount" @click="count--">-</div>
+                            <div class="qty__number" x-text="count"></div>
+                            <div class="qty__amount" @click="count++">+</div>
+                        </div>
+                        <div class="buy__mode">
+                            <input type="radio" id="buy__mode" name="Buy Mode" value="Buy Once" />
+                            <label for="Buy Mode"><strong> Buy once - $39.99 </strong></label><br />
+                            <small>or 4 interest-free installments of $10.00 with</small>
+
+                            <br />
+                            <input type="radio" id="buy__mode" name="Buy Mode" value="Subscription" />
+                            <label for="Buy Mode">
+                                <strong>
+                                    Subscribe & <span class="green__color"> save 12.5% </span> -
+                                    $34.99
+                                </strong></label><br />
+                            <small>Never run out of product. Cancel anytime.</small>
+                        </div>
+                        <a href="#" class="add__bag">
+                            <img src="bag.png" alt="bag" /> &nbsp; Add to Bag</a>
+                        <div class="checkboxes">
+                            <div class="round">
+                                <input type="checkbox" checked id="checkbox" />
+                                <label for="checkbox"></label> &nbsp;&nbsp;&nbsp; Lorem ipsum
+                                dolor sit amet, consectetur adipiscing elit
+                            </div>
+
+                            <div class="round">
+                                <input type="checkbox" checked id="checkbox1" />
+                                <label for="checkbox1"></label> &nbsp;&nbsp;&nbsp;Ac felis
+                                donec et odio pellentesque diam
+                            </div>
+
+                            <div class="round">
+                                <input type="checkbox" checked id="checkbox3" />
+                                <label for="checkbox3"></label> &nbsp;&nbsp;&nbsp;Pharetra
+                                convallis posuere morbi leo urna molestie
+                            </div>
+
+                            <div class="round">
+                                <input type="checkbox" checked id="checkbox4" />
+                                <label for="checkbox4"></label> &nbsp;&nbsp;&nbsp;Nunc aliquet
+                                bibendum enim facilisis gravida neque convallis
+                            </div>
+
+                            <div class="round">
+                                <input type="checkbox" checked id="checkbox5" />
+                                <label for="checkbox5"></label> &nbsp;&nbsp;&nbsp;Praesent
+                                semper feugiat nibh sed pulvinar proin gravida
+                            </div>
+
+                            <div class="round">
+                                <input type="checkbox" checked id="checkbox6" />
+                                <label for="checkbox6"></label> &nbsp;&nbsp;&nbsp;Volutpat
+                                lacus laoreet non curabitur gravida arcu ac
                             </div>
                         </div>
-
-                        <div class="col-md-3">
-                            <div class="color __3">
-                                <div class="color__name">
-                                    <p>Grey</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="color __4">
-                                <div class="color__name">
-                                    <p>Skiftebo yellow</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="color __5">
-                                <div class="color__name">
-                                    <p>Kelinge beige</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="color __6">
-                                <div class="color__name">
-                                    <p>Vibberbo black/beige</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <p class="qty small__txt">QUANTITY</p>
-                    <div class="qty__selection" x-data="{ count: 1 }">
-                        <div class="qty__amount" @click="count--">-</div>
-                        <div class="qty__number" x-text="count"></div>
-                        <div class="qty__amount" @click="count++">+</div>
-                    </div>
-                    <div class="buy__mode">
-                        <input type="radio" id="buy__mode" name="Buy Mode" value="Buy Once" />
-                        <label for="Buy Mode">Buy once - $39.99</label><br />
-                        <small>or 4 interest-free installments of $10.00 with</small>
 
                         <br />
-                        <br />
-                        <input type="radio" id="buy__mode" name="Buy Mode" value="Subscription" />
-                        <label for="Buy Mode">Subscribe & save 12.5% - $34.99</label><br />
-                        <small>Never run out of product. Cancel anytime.</small>
+                        <small>
+                            <img src="truck.png" alt="delivery truck" /> Free delivery and a
+                            risk-free <strong>quality guarantee!</strong></small>
                     </div>
-                    <a href="#" class="add__bag">
-                        <img src="bag.png" alt="bag" /> &nbsp; Add to Bag</a>
-                    <div class="checkboxes">
-                        <div class="round">
-                            <input type="checkbox" checked id="checkbox" />
-                            <label for="checkbox"></label> &nbsp;&nbsp;&nbsp; Lorem ipsum
-                            dolor sit amet, consectetur adipiscing elit
-                        </div>
-
-                        <div class="round">
-                            <input type="checkbox" checked id="checkbox1" />
-                            <label for="checkbox1"></label> &nbsp;&nbsp;&nbsp;Ac felis donec
-                            et odio pellentesque diam
-                        </div>
-
-                        <div class="round">
-                            <input type="checkbox" checked id="checkbox3" />
-                            <label for="checkbox3"></label> &nbsp;&nbsp;&nbsp;Pharetra
-                            convallis posuere morbi leo urna molestie
-                        </div>
-
-                        <div class="round">
-                            <input type="checkbox" checked id="checkbox4" />
-                            <label for="checkbox4"></label> &nbsp;&nbsp;&nbsp;Nunc aliquet
-                            bibendum enim facilisis gravida neque convallis
-                        </div>
-
-                        <div class="round">
-                            <input type="checkbox" checked id="checkbox5" />
-                            <label for="checkbox5"></label> &nbsp;&nbsp;&nbsp;Praesent semper
-                            feugiat nibh sed pulvinar proin gravida
-                        </div>
-
-                        <div class="round">
-                            <input type="checkbox" checked id="checkbox6" />
-                            <label for="checkbox6"></label> &nbsp;&nbsp;&nbsp;Volutpat lacus
-                            laoreet non curabitur gravida arcu ac
-                        </div>
-
-                    </div>
-
-                    <br />
-                    <small>
-                        <img src="truck.png" alt="delivery truck" /> Free delivery and a
-                        risk-free <strong>quality guarantee!</strong></small>
                 </div>
             </div>
             <style>
-                /* external css: flickity.css */
-
-                * {
-                    box-sizing: border-box;
+                .green__color {
+                    color: #00ba74;
                 }
 
+                /* external css: flickity.css */
 
                 .carousel {
-                    background: #FAFAFA;
+                    background: #fafafa;
                     margin-bottom: 40px;
                 }
 
@@ -370,6 +378,15 @@
                     color: white;
                 }
 
+                .flickity-slider {
+                    background: #fff;
+                }
+
+                .carousel.carousel-nav.flickity-enabled.is-draggable {
+                    width: 93%;
+                    margin: 0 auto;
+                }
+
                 .carousel-nav .carousel-cell {
                     height: 80px;
                     width: 100px;
@@ -387,7 +404,6 @@
                 .flickity-viewport {
                     height: 300px !important;
                 }
-
 
                 .round {
                     position: relative;
@@ -448,6 +464,14 @@
                 .color__name p {
                     font-weight: 400;
                     font-size: 13px;
+                    margin: 0;
+                }
+
+                .center {
+                    display: flex;
+                    justify-content: center;
+                    min-height: 100%;
+                    align-items: center;
                 }
 
                 .color {
@@ -505,6 +529,10 @@
                     padding: 15px 150px;
                 }
 
+                .buy__mode {
+                    margin: 20px 0;
+                }
+
                 body {
                     overflow-x: hidden;
                 }
@@ -522,16 +550,16 @@
 
     <script>
         // asNavFor can be set a selector string
-        asNavFor: '.carousel-main'
+        asNavFor: ".carousel-main";
         // or an element
-        asNavFor: $('.carousel-main')[0]
-        asNavFor: document.querySelector('.carousel-main')
-        $('.carousel-main').flickity();
+        asNavFor: $(".carousel-main")[0];
+        asNavFor: document.querySelector(".carousel-main");
+        $(".carousel-main").flickity();
         // 2nd carousel, navigation
-        $('.carousel-nav').flickity({
-            asNavFor: '.carousel-main',
+        $(".carousel-nav").flickity({
+            asNavFor: ".carousel-main",
             contain: true,
-            pageDots: false
+            pageDots: false,
         });
     </script>
 </body>
