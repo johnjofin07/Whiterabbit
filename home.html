@@ -179,32 +179,28 @@
             <div class="product__wrap row">
                 <div class="product__image col-md-6">
 
-                    <div class="carousel carousel-main" data-flickity='{ "fade": true, "imagesLoaded": true }' >
-                        <div class="carousel-cell"> <img class="carousel-cell-image" src="sofa1.png" alt=""></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
+                    <div class="carousel carousel-main" data-flickity='{ "fade": true, "imagesLoaded": true,"pageDots": false }'>
+                        <img class="carousel-cell" src="sofa1.png" alt="">
+                        <img class="carousel-cell" src="sofa2.png" alt="">
+                        <img class="carousel-cell" src="sofa3.png" alt="">
+                        <img class="carousel-cell" src="sofa4.png" alt="">
+                        <img class="carousel-cell" src="sofa5.png" alt="">
+                        <img class="carousel-cell" src="sofa6.png" alt="">
+                        <img class="carousel-cell" src="sofa7.png" alt="">
+                        <img class="carousel-cell" src="sofa8.png" alt="">
+
                     </div>
 
-                    <div class="carousel carousel-nav"
-                        data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false,"prevNextButtons": false
+                    <div class="carousel carousel-nav" data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false,"prevNextButtons": false
                     }'>
-                        <div class="carousel-cell"> <img class="carousel-cell-image" src="sofa1.png" alt=""></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
+                        <img class="carousel-cell" src="sofa1.png" alt="">
+                        <img class="carousel-cell" src="sofa2.png" alt="">
+                        <img class="carousel-cell" src="sofa3.png" alt="">
+                        <img class="carousel-cell" src="sofa4.png" alt="">
+                        <img class="carousel-cell" src="sofa5.png" alt="">
+                        <img class="carousel-cell" src="sofa6.png" alt="">
+                        <img class="carousel-cell" src="sofa7.png" alt="">
+                        <img class="carousel-cell" src="sofa8.png" alt="">
                     </div>
 
 
@@ -212,7 +208,7 @@
 
                 </div>
 
-                <div class="product__discriptoion col-md-6">
+                <div class="product__discriptoion container col-md-6">
                     <h3>Pharetra Convallis</h3>
                     <p>
                         Euismod in pellentesque massa placerat duis ultricies lacus sed.
@@ -356,9 +352,10 @@
 
                 .carousel-cell {
                     width: 100%;
-                    height: 200px;
+                    object-fit: contain;
+                    height: 300px;
+                    background: #fff;
                     margin-right: 10px;
-                    background: #8C8;
                     border-radius: 5px;
                     counter-increment: carousel-cell;
                 }
@@ -384,7 +381,11 @@
                 }
 
                 .carousel-nav .carousel-cell.is-nav-selected {
-                    background: #ED2;
+                    border: solid 2px #00000087;
+                }
+
+                .flickity-viewport {
+                    height: 300px !important;
                 }
 
 
