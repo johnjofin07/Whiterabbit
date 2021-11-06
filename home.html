@@ -57,7 +57,9 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="banner__content">
-                        <h1>Lorem ipsum dolor sit amet consectetur</h1>
+                        <h1 class="banner__heading">
+                            Lorem ipsum dolor sit amet consectetur
+                        </h1>
                         <p>
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.
@@ -122,12 +124,23 @@
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
-                    justify-content: center;
-                    padding: 0 0 0 5%;
+                    padding: 10% 0 0 5%;
                 }
 
-                .banner__content h1 {
+                .banner__heading {
                     color: #fff;
+                    font-weight: 800;
+                    position: relative;
+                }
+
+                h1.banner__heading:after {
+                    position: absolute;
+                    content: "";
+                    width: 46px;
+                    height: 4px;
+                    background: #58c19c;
+                    bottom: -30px;
+                    left: 0;
                 }
 
                 .banner__img {
@@ -139,6 +152,7 @@
                     color: rgb(255 255 255 / 70%);
                     font-size: 18px;
                     font-weight: 400;
+                    margin: 60px 0 30px;
                 }
 
                 a.sign__up {
@@ -215,7 +229,7 @@
 
                 <div class="product__discriptoion col-md-6">
                     <div class="container">
-                        <h2>Pharetra Convallis</h2>
+                        <h1><strong>Pharetra Convallis </strong></h1>
                         <p>
                             Euismod in pellentesque massa placerat duis ultricies lacus sed.
                             Sit amet consectetur adipiscing elit pellentesque habitant
@@ -480,7 +494,7 @@
 
                 .color {
                     border: solid 2px #00000057;
-                    border-radius: 10px;
+                    border-radius: 7px;
                     margin: 7px 0;
                     width: 124px;
                     height: 60px;
@@ -490,14 +504,14 @@
                     background: #ff9800;
                     height: 20px;
                     margin: 0 0 5px 0;
-                    border-radius: 10px 10px 0 0;
+                    border-radius: 7px 7px 0 0;
                 }
 
                 .__2 .top__color {
                     background: #a07edc;
                     height: 20px;
                     margin: 0 0 5px 0;
-                    border-radius: 10px 10px 0 0;
+                    border-radius: 7px 7px 0 0;
                 }
 
                 .qty__amount {
@@ -518,7 +532,7 @@
                 }
 
                 .color__selection {
-                    width: 80%;
+                    width: 87%;
                 }
 
                 .add__bag {
